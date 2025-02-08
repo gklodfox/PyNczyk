@@ -3,7 +3,7 @@ import logging
 from pynczyk import Client, Status
 
 logger: logging.Logger = logging.getLogger(__name__)
-logger.setLevel(logging.INFO)
+logging.basicConfig(filename="pynczyk.log", level=logging.INFO)
 
 
 def run_client() -> Status:
