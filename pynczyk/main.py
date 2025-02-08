@@ -1,14 +1,14 @@
+import sys
 import logging
 
 from pynczyk import Client, Status
 
 logger: logging.Logger = logging.getLogger(__name__)
-logging.basicConfig(filename="pynczyk.log", level=logging.INFO)
+logging.basicConfig(stream=sys.stdout, level=logging.INFO)
 
 
 def run_client() -> Status:
     logger.info("Starting client")
-
     client: Client = Client()
 
     logger.info(client.config)
