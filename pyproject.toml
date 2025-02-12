@@ -9,7 +9,7 @@ readme = "README.md"
 python = "^3.13"
 
 [tool.poetry.scripts]
-pynczyk-client = "pynczyk.main:run_client"
+pynczyk-client = "pynczyk.pynczyk:run_client"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.4"

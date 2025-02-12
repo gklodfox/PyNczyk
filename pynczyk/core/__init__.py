@@ -1,5 +1,4 @@
-from .menu import Menu
-from .config import Config
 from .enums import Status
+from .config import Config
 
-__all__ = ["Menu", "Config", "Status"]
+__all__ = ["Status", "Config"]
